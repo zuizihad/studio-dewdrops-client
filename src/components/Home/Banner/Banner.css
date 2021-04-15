@@ -1,0 +1,30 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DC3545;
+}
+.banner img {
+    width: 100%;
+}
+.banner-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shop-btn {
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    padding: 16px 40px 16px 40px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+.shop-btn:hover{
+    background: #ffff;
+    color: #DC3545;
+}

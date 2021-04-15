@@ -1,0 +1,7 @@
+.promotion {
+    background-color: #DC3545;
+}
+.params {
+    display:flex;
+    justify-content:space-around;
+}

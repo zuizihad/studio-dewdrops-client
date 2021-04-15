@@ -1,0 +1,24 @@
+.card{
+ border: none;
+ cursor: pointer;
+}
+.service-card:hover{
+    background-color: #DC3545;
+    color: #fff;
+}
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 23px;
+    background: #ffffff;
+    box-shadow:  7px 7px 11px #ebebeb,
+             -7px -7px 11px #ffffff;
+}
+.icon {
+    font-size:50px;
+    color: goldenrod;
+    margin: 30px 0px;
+}

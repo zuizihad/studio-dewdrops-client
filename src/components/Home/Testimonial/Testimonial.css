@@ -1,0 +1,12 @@
+.author img{
+    border: none;
+    border-radius: 50%;
+    width:100px;
+}
+
+.testimonial-card {
+    border-radius: 23px;
+background: #ffffff;
+box-shadow:  9px 9px 18px #e0e0e0,
+             -9px -9px 18px #ffffff;
+}
