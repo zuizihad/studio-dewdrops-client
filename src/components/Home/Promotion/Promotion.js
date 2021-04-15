@@ -4,9 +4,8 @@ import promotionalImg from '../../../images/studio.jpg'
 const Promotion = () => {
     return (
         <section className="promotion my-5">
-            <h1 className="text-center text-white py-5" >PROMOTIONS</h1>
             <div className="d-flex justify-content-center">
-                <div className="row w-75 align-items-center mb-5">
+                <div className="row w-75 align-items-center my-5">
                     <div className="col-md-6">
                         <img src={promotionalImg} alt="" width="600" />
                     </div>
