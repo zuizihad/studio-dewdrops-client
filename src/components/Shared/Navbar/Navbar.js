@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { userContext } from '../../../App';
+import './Navbar.css';
 
 const Navbar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(userContext);
     return (
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -10,27 +14,35 @@ const Navbar = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link ms-5 active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-5" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-5" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-5" href="#">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-5 " href="#">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-5" href="#">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-5" href="#">Login</a>
-                        </li>
+                        <Link to="/" className="nav-item">
+                            <a className="nav-link active me-5" aria-current="page" href="#">Home</a>
+                        </Link>
+                        <Link to="/about" className="nav-item ">
+                            <a className="nav-link me-5" href="#">About</a>
+                        </Link>
+                        <Link to="/services" className="nav-item">
+                            <a className="nav-link me-5" href="#">Services</a>
+                        </Link>
+                        <Link to="/about" className="nav-item">
+                            <a className="nav-link me-5" href="#">Reviews</a>
+                        </Link>
+                        <Link to="/blog" className="nav-item">
+                            <a className="nav-link me-5" href="#">Blogs</a>
+                        </Link>
+                        <Link to="/about" className="nav-item">
+                            <a className="nav-link me-5" href="#">Contact us</a>
+                        </Link>
+                        {
+                            (loggedInUser.email) ? (
+                                <Link to="/login" className="nav-item me-5">
+                                    <a className="nav-link">{loggedInUser.name}</a>
+                                </Link>) :
+                                (
+                                    <Link to="/login" className="nav-item me-5">
+                                        <a className="nav-link btn btn-success">Login</a>
+                                    </Link>
+                                )
+                        }
                     </ul>
                 </div>
             </div>

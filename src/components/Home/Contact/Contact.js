@@ -13,6 +13,7 @@ const Contact = () => {
                     <form action="">
                         <div className="form-group py-2">
                             <input type="text" className="form-control" placeholder="Email Address *" />
+
                         </div>
                         <div className="form-group py-2">
                             <input type="text" className="form-control" placeholder="Subject *" />
