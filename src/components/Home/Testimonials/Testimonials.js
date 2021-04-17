@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import bill from '../../../images/billg.jpg';
 import steave from '../../../images/stevejobs.jpg';
 import elon from '../../../images/mask.jpg';
@@ -44,13 +44,20 @@ const testimonialData = [
 ]
 
 const Testimonials = () => {
+    const [testiminials, setTestimonials] = useState([]);
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/getReview`)
+            .then(res => res.json())
+            .then(data => setTestimonials(data))
+    }, [])
     return (
         <section className="my-5">
             <h1 className="text-center text-secondary mb-5">TESTIMONIAL'S</h1>
             <div className="d-flex justify-content-center">
                 <div className="row w-75">
                     {
-                        testimonialData.map(testimonial => <Testimonial testimonial={testimonial}></Testimonial>)
+                        testiminials.map(testimonial => <Testimonial testimonial={testimonial}></Testimonial>)
                     }
                 </div>
             </div>

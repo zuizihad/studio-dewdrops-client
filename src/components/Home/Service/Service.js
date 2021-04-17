@@ -1,17 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Service.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Service = ({ service }) => {
     return (
         <div className="col-md-4">
-            <div className="card mb-4 ">
-                <div className="card-body service-card">
-                    <FontAwesomeIcon className="icon" icon={service.icon} />
-                    <h5 className="card-title">{service.title}</h5>
-                    <p>{service.description}</p>
+            <Link to={`/service/${service._id}`}>
+                <div className="card mb-4 ">
+                    <div className="card-body service-card">
+                        <img src={service.imageURL} alt="" width="100" />
+                        <h5 className="card-title">{service.serviceName}</h5>
+                        <p>{service.description}</p>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };

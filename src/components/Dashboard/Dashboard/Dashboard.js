@@ -1,9 +1,16 @@
 import React from 'react';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Dashboard = () => {
     return (
         <div>
-            <h1>dashboard</h1>
+            <Sidebar></Sidebar>
+            <div className="main-content">
+                <main>
+                    <h1>order list</h1>
+                </main>
+            </div>
+
         </div>
     );
 };
