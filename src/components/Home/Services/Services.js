@@ -4,50 +4,50 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCameraRetro, faCamera, faAddressBook, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { userContext } from '../../../App';
 
-const serviceData = [
-    {
-        id: 1,
-        title: 'black and white photocopy',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
-        icon: faCamera,
-    },
-    {
-        id: 2,
-        title: 'colorful photocopy',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
-        icon: faCameraRetro,
-    },
-    {
-        id: 3,
-        title: 'thesis/project paper binding',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
-        icon: faAddressBook
-    },
-    {
-        id: 4,
-        title: 'photo black and white',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
-        icon: faCamera
-    },
-    {
-        id: 5,
-        title: 'photo colorful',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
-        icon: faCameraRetro
-    },
-    {
-        id: 6,
-        title: 'web browsing',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
-        icon: faDesktop
-    },
-]
+// const serviceData = [
+//     {
+//         id: 1,
+//         title: 'black and white photocopy',
+//         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+//         Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
+//         icon: faCamera,
+//     },
+//     {
+//         id: 2,
+//         title: 'colorful photocopy',
+//         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+//         Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
+//         icon: faCameraRetro,
+//     },
+//     {
+//         id: 3,
+//         title: 'thesis/project paper binding',
+//         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+//         Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
+//         icon: faAddressBook
+//     },
+//     {
+//         id: 4,
+//         title: 'photo black and white',
+//         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+//         Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
+//         icon: faCamera
+//     },
+//     {
+//         id: 5,
+//         title: 'photo colorful',
+//         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+//         Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
+//         icon: faCameraRetro
+//     },
+//     {
+//         id: 6,
+//         title: 'web browsing',
+//         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+//         Nemo eius, nisi nostrum voluptatum obcaecati cum.`,
+//         icon: faDesktop
+//     },
+// ]
 
 const Services = () => {
     const [services, setServices] = useState([]);

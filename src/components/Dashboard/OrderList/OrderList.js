@@ -15,7 +15,7 @@ const OrderList = () => {
         const url = `https://floating-retreat-39359.herokuapp.com/setOrderStatus`
         console.log(statusData)
         fetch(url, {
-            method: 'POST',
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
