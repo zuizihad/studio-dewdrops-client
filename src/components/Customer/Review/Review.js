@@ -16,7 +16,7 @@ const Review = () => {
             description: data.description,
             imageURL: imageURL
         }
-        const url = `http://localhost:5000/addReview`
+        const url = `https://floating-retreat-39359.herokuapp.com/addReview`
         console.log(reviewData)
         fetch(url, {
             method: 'POST',

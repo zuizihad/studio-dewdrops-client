@@ -3,7 +3,7 @@ import React from 'react';
 const GetService = ({ service }) => {
     const { _id, serviceName, price } = service;
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/deleteService/${id}`
+        const url = `https://floating-retreat-39359.herokuapp.com/deleteService/${id}`
         fetch(url, {
             method: 'DELETE'
         })

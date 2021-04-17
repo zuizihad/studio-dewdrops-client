@@ -12,7 +12,7 @@ const OrderList = () => {
         const statusData = {
             status: data.status
         }
-        const url = `http://localhost:5000/setOrderStatus`
+        const url = `https://floating-retreat-39359.herokuapp.com/setOrderStatus`
         console.log(statusData)
         fetch(url, {
             method: 'POST',
@@ -28,7 +28,7 @@ const OrderList = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders`)
+        fetch(`https://floating-retreat-39359.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

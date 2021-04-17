@@ -11,7 +11,7 @@ const MakeAdmin = () => {
             email: data.email,
             role: 'admin',
         }
-        const url = `http://localhost:5000/addAdmin`
+        const url = `https://floating-retreat-39359.herokuapp.com/addAdmin`
         console.log(adminData)
         fetch(url, {
             method: 'POST',
