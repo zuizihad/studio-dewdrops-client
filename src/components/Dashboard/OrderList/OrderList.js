@@ -10,12 +10,13 @@ const OrderList = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         const statusData = {
+            id: data.id,
             status: data.status
         }
-        const url = `https://floating-retreat-39359.herokuapp.com/setOrderStatus`
+        const url = `http://localhost:5000/${data.id}`
         console.log(statusData)
         fetch(url, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
             },
@@ -64,7 +65,7 @@ const OrderList = () => {
                                             <option value="pending">pending</option>
                                             <option value="going">going</option>
                                         </select>
-                                        <input type="submit" />
+                                        <input id={order.id} type="submit" />
                                     </form>
                                 </td>
                             </tr>)
