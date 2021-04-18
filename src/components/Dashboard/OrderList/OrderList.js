@@ -13,7 +13,7 @@ const OrderList = () => {
             id: data.id,
             status: data.status
         }
-        const url = `http://localhost:5000/${data.id}`
+        const url = `https://floating-retreat-39359.herokuapp.com/${data.id}`
         console.log(statusData)
         fetch(url, {
             method: 'PATCH',
