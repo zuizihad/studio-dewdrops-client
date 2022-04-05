@@ -5,7 +5,7 @@ import GetService from './GetService';
 const ManageService = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        const url = `https://floating-retreat-39359.herokuapp.com/services`;
+        const url = `https://studio-dew-drops.herokuapp.com/services`;
         fetch(url)
             .then((response) => response.json())
             .then(data => setServices(data))

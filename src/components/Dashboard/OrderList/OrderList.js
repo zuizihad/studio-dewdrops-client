@@ -13,7 +13,7 @@ const OrderList = () => {
             id: data.id,
             status: data.status
         }
-        const url = `https://floating-retreat-39359.herokuapp.com/${data.id}`
+        const url = `https://studio-dew-drops.herokuapp.com/${data.id}`
         console.log(statusData)
         fetch(url, {
             method: 'PATCH',
@@ -29,7 +29,7 @@ const OrderList = () => {
     };
 
     useEffect(() => {
-        fetch(`https://floating-retreat-39359.herokuapp.com/orders`)
+        fetch(`https://studio-dew-drops.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

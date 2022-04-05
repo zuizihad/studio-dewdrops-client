@@ -19,7 +19,7 @@ const AddService = () => {
             price: data.price,
             imageURL: imageURL
         }
-        const url = `https://floating-retreat-39359.herokuapp.com/addService`
+        const url = `https://studio-dew-drops.herokuapp.com/addService`
         console.log(serviceData)
         fetch(url, {
             method: 'POST',

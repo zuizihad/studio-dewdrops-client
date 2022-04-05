@@ -12,7 +12,7 @@
  [client side repo](https://github.com/Porgramming-Hero-web-course/complete-website-client-zuizihad)
 
 ### `api`
- [live api](https://floating-retreat-39359.herokuapp.com/)
+ [live api](https://studio-dew-drops.herokuapp.com/)
 
  ### stackholder:
  1. admin

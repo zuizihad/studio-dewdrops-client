@@ -26,7 +26,7 @@ const Customer = () => {
             email: loggedInUser.email,
             status: "pending"
         }
-        const url = `https://floating-retreat-39359.herokuapp.com/checkout`
+        const url = `https://studio-dew-drops.herokuapp.com/checkout`
         console.log(bookServiceData)
         fetch(url, {
             method: 'POST',
@@ -42,7 +42,7 @@ const Customer = () => {
     };
 
     useEffect(() => {
-        fetch(`https://floating-retreat-39359.herokuapp.com/service/` + id)
+        fetch(`https://studio-dew-drops.herokuapp.com/service/` + id)
             .then(res => res.json())
             .then(data => setServices(data))
     }, [id])
